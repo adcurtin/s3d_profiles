@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="PowerSpec 3D Pro" version="2018-09-10 21:25:57" app="S3D-Software 4.0.0">
+<profile name="PowerSpec 3D Pro git" version="2018-09-10 21:25:57" app="S3D-Software 4.0.0">
 
   <!-- ####################################### -->
   <!-- #          Global Settings            # -->
@@ -233,8 +233,6 @@
   <!-- #     Material Preconfigurations      # -->
   <!-- ####################################### -->
 
-  <!-- TODO: add speed and restraction speed to each material -->
-
   <autoConfigureMaterial name="ABS">
     <extruder name="Right Extruder">
       <toolheadNumber>0</toolheadNumber>
@@ -296,6 +294,7 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
+    <defaultSpeed>3600</defaultSpeed>
   </autoConfigureMaterial>
 
   <autoConfigureMaterial name="TPU">
@@ -345,7 +344,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>0</stabilizeAtStartup>
-      <setpoint layer="1" temperature="230"/>
+      <setpoint layer="1" temperature="240"/>
     </temperatureController>
     <temperatureController name="Heated Build Platform">
       <temperatureNumber>0</temperatureNumber>
@@ -359,6 +358,7 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
+    <defaultSpeed>1800</defaultSpeed>
   </autoConfigureMaterial>
 
   <autoConfigureMaterial name="PETG">
@@ -416,12 +416,13 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>0</stabilizeAtStartup>
-      <setpoint layer="1" temperature="110"/>
+      <setpoint layer="1" temperature="100"/>
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
+    <defaultSpeed>3600</defaultSpeed>
   </autoConfigureMaterial>
 
   <autoConfigureMaterial name="PLA">
@@ -485,6 +486,7 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
+    <defaultSpeed>3600</defaultSpeed>
   </autoConfigureMaterial>
 
   <autoConfigureMaterial name="PVA">
@@ -548,6 +550,7 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
+    <defaultSpeed>3600</defaultSpeed>
   </autoConfigureMaterial>
 
   <autoConfigureMaterial name="Nylon">
@@ -610,6 +613,7 @@
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
     </fanSpeed>
+    <defaultSpeed>3600</defaultSpeed>
   </autoConfigureMaterial>
 
   <autoConfigureMaterial name="PLA (right) PVA (left)">
@@ -673,6 +677,7 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
+    <defaultSpeed>3600</defaultSpeed>
   </autoConfigureMaterial>
 
   <!-- ####################################### -->
@@ -712,7 +717,7 @@
   <!-- #     Extruder Preconfigurations      # -->
   <!-- ####################################### -->
 
-  <!-- TODO: tweek both extruders string gcode. -->
+  <!-- TODO: tweek both extruders starting gcode. -->
   <!-- no other modifications necessary        -->
 
   <autoConfigureExtruders name="Right Extruder Only" allowedToolheads="1">
